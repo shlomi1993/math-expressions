@@ -49,6 +49,20 @@ In this part I created a mechanism to differentiate them according to a given va
 The representation of the mathematical expression is saturated with parenthesis.
 This part is about simplify the representation by reducing the number of parenthesis.
 
+## Compile and Run
+
+To compile the program, use ant compiler.
+Run the command "ant compile" to compile the program, and then "ant run" to run it.
+Note that the compilation required the build.xml file that in the main project directory.
+The program will run a basic main code that written in ExpressionsTest.java file and contains an example.
+
+The main in ExpressionsTest.java file is just a driver/test code and one can change it a she/he wishes. 
+
+#### Running Example
+
+![image](https://user-images.githubusercontent.com/72878018/120226033-0c547a80-c24f-11eb-9101-74f553f0e5cf.png)
+
+
 ## Language
 
 - 100% Java.
