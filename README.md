@@ -46,7 +46,7 @@ That is how we get a tree like this:
 
 In this part I created a mechanism to differentiate them according to a given variable.
 
-### 3 -- Simplification
+### Part 3 -- Simplification
 
 The representation of the mathematical expression is saturated with parenthesis.
 This part is about simplify the representation by reducing the number of parenthesis.
