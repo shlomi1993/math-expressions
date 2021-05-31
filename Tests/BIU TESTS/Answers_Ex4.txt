@@ -1,0 +1,79 @@
+Test 1 Ex.1:
+Answer is: (((35.0+(y^4.0))+4.75)^2.0)
+Expression is: (((x + y) + z)^2.0)
+
+Test 2 Ex.2:
+Answer is: (4.0*(((x+y)+(z+w))^3.0))
+Expression is: ((x + y) + (z + w))^4
+
+Test 3 Ex.2:
+Answer is: 234256.0
+Expression is: ((x + y) + (z + w))^4
+
+Test 4 Ex.2:
+Answer is: x, y, z, w
+Expression is: ((x + y) + (z + w))^4
+
+Test 5 Ex.3:
+Answer is: (((2.0*x)+Sin((4.0*y)))+(e^x))
+Expression is: (2x + sin(4y)) + e^x)
+
+Test 6 Ex.3:
+Answer is: 11.406508505367933
+Expression is: (2x + sin(4y)) + e^x)
+
+Test 7 Ex.3:
+Answer is: (2.0+(e^x))
+Expression is: (2x + sin(4y)) + e^x)
+
+Test 8 Ex.4:
+Answer is: 0.10173001015936747
+Expression is: ((sin(1) + cos(1)) / 10)
+
+Test 9 Ex.5:
+Answer is: 2y
+Expression is: (log(9x,9x) * 2y)
+
+Test 10 Ex.6:
+Answer is: (-0.0-(2.0+x))
+Expression is: expression: (-((y / -(y / x)) * 0.0) + ---(((-2.0 - 0.0) - (-4.0)) + x))
+
+Test 11 Ex.7:
+Answer is: 73.578125
+Expression is: ((x^2 + y^2) - z^3)
+
+Test 12 Ex.8:
+Answer is: 1
+Expression is: (log(x,x) / log(x,x))
+
+Test 13 Ex.9:
+Answer is: -x
+Expression is: (0 - (x * 1 / 1))
+
+Test 14 Ex.10:
+Answer is: (((1.0*(-sin(x)))+(1.0/x))+((((0.0*x)-(1.0*1.0))/(x^2.0))+(((2.0*1.0)*(x^(2.0-1.0)))*cos((x^2.0)))))
+Expression is: ((cos(x) + log(e,x)) + (1/x + sin(x^2)))
+
+Test 15 Ex.11:
+Answer is: 9x
+Expression is: (((3 + 6) * x) + (4x * sin(0)))
+
+Test 16 Ex.12:
+Answer is: 2.4660592671959822E27
+Expression is: ((cos(5x^7) * e) + y^(x / 2 + 5))
+
+Test 17 Ex.13:
+Answer is: 2x
+Expression is: (((x * 1) * 1) + (0 - -(x + 0)))
+
+Test 18 Ex.14:
+Answer is: 0
+Expression is: ((((20.0 * (x^5.0)) * (3.0 * (e^x))) * (Cos((x^2.0)))) * (x - x)) * (20*x^5 * 3e^x ) * Cos(x^2) * (x - x)
+
+Test 19 Ex.14:
+Answer is: 1
+Expression is: ((((e^x) * ((e^x)^2.0)) / ((e^x)^3.0)) * ((((e^x)^4.0) * ((e^x)^3.0)) / ((e^x)^7.0)))
+
+Test 20 Ex.14:
+Answer is: הנגזרת
+Expression is: sin(e^(sin(x)/cos(x))

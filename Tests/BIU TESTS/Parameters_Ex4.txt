@@ -1,0 +1,80 @@
+Test 1:
+Assigning:
+x = 35
+y = y^4
+z = 4.75
+
+Test 2:
+Differentiating by x, then simplifying.
+
+Test 3:
+Assigning:
+x = 2
+y = 4
+z = 6
+w = 10
+Then evaluating.
+
+Test 4:
+Applying getVariables().
+
+Test 5:
+Just creating the expression.
+
+Test 6:
+Assigning:
+x = 2
+y = 0.25
+z = Math.E
+Then evalutating.
+
+Test 7:
+Differentiating by x, then simplifying.
+
+Test 8:
+Evaluating.
+
+Test 9:
+Simplifying.
+
+Test 10:
+Simplifying.
+
+Test 11:
+Assigning:
+x = 7
+y = 5
+z = 0.75
+Then evaluating.
+
+Test 12:
+Simplifying.
+
+Test 13:
+Simplifying.
+
+Test 14:
+Differentiating by x.
+
+Test 15:
+Simplifying.
+
+Test 16:
+x = 25
+y = 36.75
+z = Math.E
+Then evaluating.
+
+Test 17:
+Simplifying.
+
+Test 18:
+Simplifying.
+
+Test 19:
+x = 2.71
+y = 0
+Then evaluating.
+
+Test 20:
+Differentiating by x.

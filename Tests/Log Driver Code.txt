@@ -1,0 +1,92 @@
+    public static void main(String[] args) {
+
+        Expression x = new Mult(new Num(3), new Var("x"));
+        Expression b = new Num(5);
+        Expression exp = new Log(b, x);
+        Expression diff1 = exp.differentiate("x").simplify();
+        Expression diff2 = ((Log) exp).difftest("x").simplify();
+        
+        System.out.println("Expression: " + exp.simplify());
+        System.out.println("Diff Ver 1: " + diff1);
+        System.out.println("Diff Ver 2: " + diff2);
+
+    }
+
+
+Simple Diff:
+===========
+    public Expression differentiate(String var) {
+
+        Expression base = getExpression1();
+        Expression argu = getExpression2();
+        Expression counter = argu.differentiate(var);
+        Expression logBase = new Log(new Var("e"), base);
+        Expression denomin = new Mult(logBase, argu);
+        return new Div(counter, denomin);
+
+    }
+
+Complex Diff:
+============
+    public Expression differentiate(String var) {
+
+        Expression base = getExpression1();
+        Expression argu = getExpression2();
+        Expression baseDiff = base.differentiate(var);
+        Expression arguDiff = argu.differentiate(var);
+        Expression lnBase = new Log(new Var("e"), base);
+        Expression lnArgu = new Log(new Var("e"), argu);
+
+        Expression factor1 = new Div(new Mult(lnBase, arguDiff), argu);
+        Expression factor2 = new Div(new Mult(lnArgu, baseDiff), base);
+        Expression counter = new Minus(factor1, factor2);
+        Expression denomin = new Pow(base, new Num(2));
+
+        return new Div(counter, denomin);
+
+    }
+
+
+    public static void main(String[] args) {
+
+        Expression x;
+        Expression b;
+        Expression exp;
+
+        x = new Minus(new Num(17), new Var("x"));
+        b = new Plus(new Pow(new Var("x"), new Num(2)), new Var("y"));
+        exp = new Log(b, x);
+
+        System.out.println(exp);
+        System.out.println(exp.simplify());
+        System.out.println(exp.differentiate("x"));
+        System.out.println(exp.differentiate("x").simplify());
+
+//        int counter = 1;
+//        for (double i = -2; i <= 2; i += 0.5) {
+//            for (double j = -2; j <= 2; j += 0.5) {
+//                // Test 1
+//                x = new Num(i);
+//                b = new Num(j);
+//                exp = new Log(b, x);
+//
+//                System.out.println("Test:" + counter++);
+//                System.out.println("Exp:      " + exp);
+//                System.out.println("Exp Simp: " + exp.simplify());
+//                try {
+//                    System.out.println("Exp Ev:   " + exp.evaluate());
+//                } catch (Exception e) {
+//                    System.out.println("Could not evaluate expression.");
+//                }
+//                System.out.println("Diff:     " + exp.differentiate("x"));
+//                try {
+//                    System.out.println("Diff Ev:  " + exp.differentiate("x").evaluate());
+//                } catch (Exception e) {
+//                    System.out.println("Could not evaluate diff.");
+//                }
+//            }
+//        }
+
+
+
+    }
