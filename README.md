@@ -6,7 +6,9 @@ In this repo I share my imiplementation of a system that can represent nested ma
 
 This implementation is based on **Object-Oriented priniples** and **Composite/Interpreter Design-Pattern**.
 
-## The ProjectThis project is devided to three main parts:
+## The Project
+
+This project is devided to three main parts:
 
 ### Part 1 -- Mathematical Expressions
 
