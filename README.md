@@ -1,4 +1,4 @@
-# MathExpressions
+# Math Expressions
 
 ## In General
 
