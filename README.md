@@ -10,7 +10,7 @@ This implementation is based on **Object-Oriented priniples** and **Composite/In
 
 This project is devided to three main parts:
 
-### Part 1 -- Mathematical Expressions
+### Part 1 - Mathematical Expressions
 
 In this part I created a representation for a mathematical expressions such as sin(((2x + y) * 4)^x).
 I created classes for unary expressions such as:
@@ -42,11 +42,11 @@ That is how we get a tree like this:
 ![image](https://user-images.githubusercontent.com/72878018/120223262-03ad7580-c24a-11eb-8039-9947d1a673ed.png)
 
 
-### Part 2 -- Automatic Differentitation
+### Part 2 - Automatic Differentitation
 
 In this part I created a mechanism to differentiate them according to a given variable.
 
-### Part 3 -- Simplification
+### Part 3  - Simplification
 
 The representation of the mathematical expression is saturated with parenthesis.
 This part is about simplify the representation by reducing the number of parenthesis.
